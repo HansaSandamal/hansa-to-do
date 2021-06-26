@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import InputField from '../components/InputField';
 import ToDoItem from '../components/ToDoItem';
+
 import Header from '../layouts/Header';
 
 const Home: React.FC = () => {
@@ -24,6 +25,7 @@ const Home: React.FC = () => {
             {
                 renderItem()
             }
+
         </div>
     )
 }
