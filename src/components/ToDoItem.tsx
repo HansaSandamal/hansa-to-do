@@ -8,10 +8,12 @@ type ToDoItemProps={
 const ToDoItem:React.FC<ToDoItemProps>=(props)=>{
     const {itemName}=props;
     return(
-        <div >
+        <div className={'item'} >
             {itemName}
-            {/*<Button>Update</Button>*/}
-            {/*<Button>Delete</Button>*/}
+            <button  style={{float: 'right', backgroundColor: 'blue', color: 'white'}}>
+                Update</button>
+            <button  style={{float: 'right', backgroundColor: 'red', color: 'white'}}>
+                Delete</button>
         </div>
 
     )
